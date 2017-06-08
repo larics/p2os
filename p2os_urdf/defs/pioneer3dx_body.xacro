@@ -229,13 +229,13 @@
       <legacyMode>false</legacyMode>
       <alwaysOn>true</alwaysOn>
 	  <updateRate>100.0</updateRate>
-	  <leftJoint>base_left_wheel_joint</leftJoint>
-      <rightJoint>base_right_wheel_joint</rightJoint>
+	  <leftJoint>base_right_wheel_joint</leftJoint> <!--JUST BECAUSE IT WORKS-->
+      <rightJoint>base_left_wheel_joint</rightJoint> <!--JUST BECAUSE IT WORKS-->
 	  <wheelSeparation>0.32</wheelSeparation>
 	  <wheelDiameter>0.18</wheelDiameter>
 	  <wheelTorque>5</wheelTorque>
       <wheelAcceleration>0</wheelAcceleration>
-      <robotNamespace>pioneer</robotNamespace>
+     <!-- <robotNamespace></robotNamespace> REMOVED pioneer NAMESPACE-->
 	  <commandTopic>cmd_vel</commandTopic>
 	  <odometryTopic>odom</odometryTopic>
       <odometrySource>ENCODER</odometrySource><!--Other option is World-->

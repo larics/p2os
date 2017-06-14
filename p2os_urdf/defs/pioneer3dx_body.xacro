@@ -235,7 +235,7 @@
 	  <wheelDiameter>0.18</wheelDiameter>
 	  <wheelTorque>5</wheelTorque>
       <wheelAcceleration>0</wheelAcceleration>
-      <!--<robotNamespace></robotNamespace> REMOVED pioneer NAMESPACE-->
+      <robotNamespace>/${ns}</robotNamespace> <!--REMOVED pioneer NAMESPACE-->
 	  <commandTopic>cmd_vel</commandTopic>
 	  <odometryTopic>odom</odometryTopic>
       <odometrySource>ENCODER</odometrySource><!--Other option is World-->
@@ -252,7 +252,7 @@
 	  <alwaysOn>true</alwaysOn>
 	  <updateRate>100.0</updateRate>
 	  <bodyName>base_link</bodyName>
-	  <topicName>base_pose_ground_truth</topicName>
+	  <topicName>${ns}/base_pose_ground_truth</topicName>
 	  <gaussianNoise>0.01</gaussianNoise>
 	  <frameName>map</frameName>-->
       <!-- initialize odometry for fake localization-->

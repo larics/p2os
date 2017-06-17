@@ -237,7 +237,7 @@
       <wheelAcceleration>0</wheelAcceleration>
       <robotNamespace>/${ns}</robotNamespace> <!--REMOVED pioneer NAMESPACE-->
 	  <commandTopic>cmd_vel</commandTopic>
-	  <odometryTopic>odom</odometryTopic>
+	  <odometryTopic>pose</odometryTopic>
       <odometrySource>ENCODER</odometrySource><!--Other option is World-->
 	  <odometryFrame>odom</odometryFrame>
       <robotBaseFrame>base_link</robotBaseFrame>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <robot name="pioneer3dx_hokuyo" xmlns:xacro="http://ros.org/wiki/xacro">
-<arg name="namespace" default="pioneer"/>
+<arg name="namespace" default="$(env ROBOT_NAME)"/>
 
   <property name="ns" value="$(arg namespace)" />
 	   
@@ -70,7 +70,7 @@
 	  </ray>
 	  <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
 		<topicName>${ns}/scan</topicName>
-		<frameName>${ns}/hokuyo</frameName>  <!--REPLACED hokuyo-->
+		<frameName>${ns}/laser</frameName>  
 	  </plugin>
 	</sensor>
   </gazebo>

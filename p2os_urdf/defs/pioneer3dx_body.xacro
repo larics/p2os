@@ -238,12 +238,13 @@
       <robotNamespace>pioneer</robotNamespace>
 	  <commandTopic>cmd_vel</commandTopic>
 	  <odometryTopic>odom</odometryTopic>
-      <odometrySource>ENCODER</odometrySource><!--Other option is World-->
+      <odometrySource>encoder</odometrySource><!--Other option is world-->
 	  <odometryFrame>odom</odometryFrame>
       <robotBaseFrame>base_link</robotBaseFrame>
       <publishTf>1</publishTf>
-      <publishWheelTF>false</publishWheelTF>
-      <publishWheelJointState>false</publishWheelJointState>
+      <publishWheelTF>true</publishWheelTF>
+      <publishWheelJointState>true</publishWheelJointState>
+      <publishOdomTF>true</publishOdomTF>
       <rosDebugLevel>Warn</rosDebugLevel>
 	</plugin>
 
